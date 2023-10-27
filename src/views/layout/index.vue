@@ -8,6 +8,7 @@ import menuNav from './menuNav.vue'
 </script>
 
 <template>
+  <div class="bjimg"></div>
 <div class="center">
   <nav-bar></nav-bar>
   <br>
@@ -22,5 +23,19 @@ import menuNav from './menuNav.vue'
   height: 100%;
   position: fixed;
   left: 17%;
+}
+.bjimg{
+  position: fixed;
+  top: 136px;
+  left:0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  min-width: 1000px;
+  zoom: 1;
+  background-color: #fff;
+  background-image: url("../../assets/img/background.jpeg");
+  background-repeat: no-repeat;
+  background-position: center 0;
 }
 </style>
