@@ -52,7 +52,7 @@ const activeIndex = ref('1')
   position: relative;
 }
 .search{
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: 100%;
   top: 10%;

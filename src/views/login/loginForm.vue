@@ -41,15 +41,22 @@ body {
   font-family: "lato", sans-serif;
 }
 .form {
+  position: absolute;
+  left: -1000px;
   background-color: white;
   width: 400px;
   border-radius: 8px;
   padding: 20px 40px;
   box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
-  margin-left: 38%;
+  margin-left: 36%;
   margin-top: 8%;
+  opacity: 0;
+  transition: all 2s;
 }
-
+html:hover form{
+  transform: translateX(1000px);
+  opacity: 1;
+}
 .title {
   font-size: 50px;
   margin-bottom: 50px;

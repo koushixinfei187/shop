@@ -23,7 +23,7 @@
 }
 ul{
   display: flex;
-  position: fixed;
+  position: absolute;
   width: 300px;
   height: 60px;
   flex-direction: row;
