@@ -6,7 +6,7 @@
 <div class="nav-bar">
   <ul>
     <li id="1"></li>
-    <router-link to="/login"><li id="2">登录</li></router-link>
+    <router-link to="/loginorregister"><li id="2">登录</li></router-link>
     <li id="3">我的订单</li>
     <li id="4">会员中心</li>
   </ul>

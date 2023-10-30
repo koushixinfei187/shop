@@ -1,7 +1,11 @@
 <script setup>
 import {ref} from "vue";
+import {reactive} from "vue";
 import {  Search } from '@element-plus/icons-vue'
 const activeIndex = ref('1')
+let content = reactive({
+  input:""
+})
 </script>
 
 <template>
@@ -33,9 +37,10 @@ const activeIndex = ref('1')
       <span class="ml-3 w-35 text-gray-600 inline-flex items-center"
       ></span
       >
-        <el-input v-model="input4" class="w-50 m-2" placeholder="搜索商品" size="large"
-                  style="width: 25%"
+        <el-input v-model.lazy="content.input" class="w-50 m-2" placeholder="搜索商品" size="large"
+                  style="width: 30%"
         >
+
           <template #prefix>
             <el-icon class="el-input__icon"><search /></el-icon>
           </template>

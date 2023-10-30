@@ -1,11 +1,14 @@
 <script setup>
-import loginForm from './loginForm.vue'
+
+import loginOrRegister from './loginOrRegister.vue'
 </script>
 
 <template>
-<login-form></login-form>
+  <login-or-register></login-or-register>
+
 </template>
 
 <style scoped>
+
 
 </style>
